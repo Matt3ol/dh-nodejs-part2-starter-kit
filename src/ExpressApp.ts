@@ -7,6 +7,15 @@
 // ## Use
 
 // - Dummy database with initial data:
+import express from "express";
+import "express-async-errors";
+import morgan from "morgan";
+
+const app = express();
+const port = 3000;
+
+app.use(morgan("dev"));
+
 
   type Planet = {
     id: number,
